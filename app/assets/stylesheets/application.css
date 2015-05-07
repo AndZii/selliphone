@@ -172,4 +172,12 @@ h2 {
         font-size: 170%;
     }
 
+    nav ul > li a {
+        font-size: 220%;
+    }
+
+    .underline-a {
+        font-size: 240%;
+    }
 }
+
