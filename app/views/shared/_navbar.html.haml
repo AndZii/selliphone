@@ -1,0 +1,71 @@
+%nav.navbar.navbar-default
+  .container-fluid
+    / Brand and toggle get grouped for better mobile display
+    .navbar-header
+      %button.navbar-toggle.collapsed{"data-target" => "#bs-example-navbar-collapse-1", "data-toggle" => "collapse", :type => "button"}
+        %span.sr-only Toggle navigation
+        %span.icon-bar
+        %span.icon-bar
+        %span.icon-bar
+      %a.navbar-brand.logo.unxderline-a.hidden-xs{:href => "/"}
+        %span.logo-part SelliPhone.
+        %span.logo-part
+          %span.red N
+          %span.green Y
+          %span.blue C
+    #bs-example-navbar-collapse-1.collapse.navbar-collapse
+      %ul.nav.navbar-nav.navbar-right
+        %li
+          %a.underline-a{:href => "/"} Sell My iPhone
+        %li.dropdown
+          %a.dropdown-toggle.underline-a{"aria-expanded" => "true", "data-toggle" => "dropdown", :href => "", :role => "button"}
+            We Buy
+            %span.caret
+          %ul.dropdown-menu{:role => "menu"}
+            %li
+              = link_to 'sell iPhone 7 in NYC', iphone7_path
+            %li
+              = link_to 'sell iPhone 6s in NYC', iphone6s_path  
+            %li
+              = link_to 'sell iPhone 5 in NYC', iphone5_path
+            %li
+              = link_to 'sell iPhone 6 in NYC', iphone6_path
+            %li
+              = link_to 'sell Samsung devices', samsung_s6edge_path
+            %li
+              = link_to 'sell iPad in NYC', ipad_air_2_path
+        %li
+          = link_to 'About Us', about_path , :class => 'underline-a'
+        %li
+          %a{:href => "#"}
+        %li
+          %a{:href => "#"}
+    / /.navbar-collapse
+  / /.container-fluid
+  
+.container
+  .row
+    .col-sm-12.col-lg-8.col-md-12.col-lg-offset-2.visible-xs  
+      %img.img-responsive{:src => "/big.jpg", :align => "center"}
+  
+- unless current_page?(url_for(:controller => 'pages', :action => 'about'))
+  .container
+    .row
+      .address
+        .col-sm-8
+          %a.pull-left.hidden-xs.addr{:href => "https://www.google.com/maps/dir/Current+Location/119-16+Jamaica+Ave+Jamaica+NY+11418"} Queens: 119-16 Jamaica Ave, Jamaica, NY 11418
+        .col-sm-4
+          %a.hidden-xs.addr.pull-right{:href => "mailto:webuygoodsny@gmail.com"} webuygoodsny@gmail.com
+          %br/
+          %a.pull-right.hidden-xs.addr{:href => "tel:+1-718-846-1600"} +1 (718) 846-1600
+        .mobile-address
+          / <a href="https://www.google.com/maps/place/71+W+47th+St,+New+York,+NY+10036+Suite+302" class=" visible-xs btn btn-default btn-lg"><i class="fa fa-map-marker"></i> Location in Manhattan (Suite 302)</a>
+          %br/
+          %a.btn.btn-default.btn-lg.visible-xs.addr{:href => "https://www.google.com/maps/dir/Current+Location/119-16+Jamaica+Ave+Jamaica+NY+11418"}
+            %i.fa.fa-map-marker
+            Location in Queens
+  %hr/
+%a#phone-button-wrapper.visible-xs{:href => "tel:+1-718-846-1600"}
+  %i.fa.fa-phone.fa-2x
+.call-now-sign.visible-xs
+  call now

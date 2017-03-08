@@ -1,6 +1,10 @@
 Rails.application.routes.draw do
   get 'sell/iphone/5/nyc' => 'phone#iphone5', as: :iphone5
 
+  get 'sell/iphone/7/nyc' => 'phone#iphone7', as: :iphone7
+    
+  get 'sell/iphone/6s/nyc' => 'phone#iphone6s', as: :iphone6s
+    
   get 'sell/iphone/6/nyc' => 'phone#iphone6', as: :iphone6
 
   get 'sell/samsung/galaxy/nyc' => 'phone#samsung_s6edge', as: :samsung_s6edge
