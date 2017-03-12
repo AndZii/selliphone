@@ -43,4 +43,10 @@ class PhoneController < ApplicationController
         Money, NYC, Queens, Manhattan, Brooklyn, New York, Buy"
       @title = "Sell My iPad in NYC | iPad Buyers in NYC"
   end
+  def macbook
+      @mate_description = "We buy Macbooks in NYC, Queens, Manhattan and Brooklyn for top cash. Sell your iMacs. Top dollar for apple computers in NY. Apple Macbooks buyers."
+      @meta_keywords = "Sell, Macbooks, iMacs, top cash, Computer, PC,
+        Money, NYC, Queens, Manhattan, Brooklyn, New York, Buy"
+      @title = "Sell My Macbook In NYC | Macbook And iMacs Buyers In NYC"
+  end      
 end

@@ -7,6 +7,8 @@ Rails.application.routes.draw do
 
   get 'sell/samsung/galaxy/nyc' => 'phone#samsung', as: :samsung_s6edge
 
+  get 'sell/macbook-imac/galaxy/nyc' => 'phone#macbook', as: :macbook
+    
   get 'sell/ipad/nyc' => 'phone#ipad_air', as: :ipad_air_2
 
   get 'pages/home'
